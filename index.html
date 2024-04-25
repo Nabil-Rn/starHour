@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteer Hours Pie Chart</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Volunteer Hours Pie Chart</h1>
+    </header>
+    <div class="container">
+        <form id="volunteerForm">
+            <label for="volunteerData">Enter activities and hours (e.g., "sport: 15, robotics: 20, food bank: 20"):</label>
+            <textarea id="volunteerData" name="volunteerData" placeholder="e.g., sport 15hours, robotics 40hours" rows="2" style="resize: vertical;"></textarea>
+            <button type="submit">Generate Pie Chart</button>
+        </form><br>
+        <p id="volunteerSummary"></p>
+        <div class="pie-chart-container">
+            <canvas id="volunteerPieChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
